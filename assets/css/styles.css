@@ -1,5 +1,22 @@
 /* styles.css */
+/* Creating Typewriter Info */
+.typewriter h1 {
+	overflow: hidden;
+	margin: 0 auto;
+	white-space: nowrap;
+	letter-spacing: 0.05em;
+	border-left: 0.15em solid #333;
 
-* {
-	font-family: Arial;
+	animation: typing 3s steps(40, end), blink-carat 0.75s step-end infinite;
+}
+
+@keyframes typing {
+	from, to {border-color: transparent }
+	50% {border-color: #333 }
+}
+
+/*blinking cursor effect */
+@keyframes blink-carat {
+	from, to {border-color: transparent }
+	50% {border-color: #333 }
 }
