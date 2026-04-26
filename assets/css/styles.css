@@ -1,30 +1,344 @@
 /* styles.css */
-body {
-  background: #333;
-  padding-top: 5em;
-  display: flex;
-  justify-content: center;
+/* index styling */
+.body1 {
+  background-image: url(../img/MovingPurple.gif);
+  background-repeat: no-repeat;
+	background-position: center;
+	background-attachment: fixed;
+	background-size: cover;
+  align-items: center;
 }
 
-/* Creating Typewriter Info */
-.typewriter h1 {
-	overflow: hidden;
-	margin: 0 auto;
-	white-space: nowrap;
-	letter-spacing: 0.05em;
-	border-left: 0.15em solid #333;
-	font-family: monospace;
+.typewriter1 {
+  overflow: hidden; /* Ensures the content is not revealed until the animation */
+  border-right: .15em solid darkblue; /* The typwriter cursor */
+  white-space: nowrap; /* Keeps the content on a single line */
+  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+  letter-spacing: .15em; /* Adjust as needed */
+  color:white;
+  text-align: center;
+  padding: 200px;
 
-	animation: typing 5s steps(40, end), blink-carat 0.75s step-end infinite;
+  animation: 
+    typing 6s steps(75, end),
+    blink-caret .75s step-end infinite;
 }
 
-@keyframes typing {
-	from, to {border-color: transparent }
-	50% {border-color: #333 }
+/* The typing effect */
+ @keyframes typing {
+ from {width: 0; }
+ to {width: 20ch; }
 }
 
-/*blinking cursor effect */
-@keyframes blink-carat {
-	from, to {border-color: transparent }
-	50% {border-color: #333 }
+ @keyframes blink-caret {
+  from, to {border-color: transparent; }
+  25% { border-color: white; }
 }
+
+
+/* Styling for Page 2 */
+.body2 {
+  background-image: url(../img/Winterforest2.gif);
+  background-repeat: no-repeat;
+	background-position: right;
+	background-attachment: fixed;
+	background-size: cover;
+	background-color: whitesmoke;
+}
+
+.winterheader {
+  align-items: center;
+  text-align: center;
+  padding: 200px;
+}
+
+.winterwords {
+  text-align: center;
+  top: 50%;
+  background-color: lightskyblue;
+  width: 300px;
+  height: 50px;
+  left: 40%;
+  position: absolute;
+}
+
+
+/* Styling for Page 3 */
+
+.body3 {
+  background-image: url(../img/rainystaircase.gif);
+	background-repeat: no-repeat;
+	background-position: 1000px;
+	background-attachment: fixed;
+  background-size: auto;
+	background-color: black;
+}
+
+ .text p {
+  font-size: 30px;
+        font-family: monospace;
+        color: white;
+        line-height: 1.5;
+        margin-top: 40px; /*Margin from header->firstline for readability*/
+        opacity: 0;
+        
+        animation-name: display;
+        animation-duration: 2s;
+        animation-timing-function: ease-in;
+        animation-delay: 3s;
+        animation-iteration-count: 1;
+        animation-direction: normal;
+        animation-fill-mode: forwards;
+      }
+
+  .frame { /* the "." selects specific CLASS attributes; in this instance selects specific div.*/
+   width: 75%; /*utilizing the FLEXBOX, instead of using margins, we use width since "justify-content" centered it, we are creating a frame in the exact middle." */
+   height: 600px; /*defining the height of the frame*/
+   position: relative; /*Acts as an anchor to its children, when it moves, they move.*/
+   overflow: hidden;
+     }
+   @keyframes display {
+      from {opacity:0; }
+       to {opacity: 1; }
+     }
+   @keyframes text-translate {
+       from {
+       transform: translateY(0%); /*beginning translate value*/
+      }
+       to {
+       transform: translateY(-90%); /*end translate value of the animation.*/
+      }
+     }
+
+  .text {
+      position: absolute; /*Sticks itself to its parent .frame. Essentially in another dimension*/
+      width: 50%; /*Since the .text lives inside .frame, the width is 100% of the 95%. so they practically cover the same area.*/
+      top:  50%;
+      text-align: left; /* Places the text at the left of the screen*/
+
+   /*longhand*/
+      animation-name: text-translate; 
+      animation-duration: 20s; /*total duration of the timing-function (steps)*/
+      animation-timing-function: steps(20); /*breaks animation into 20 steps*/
+      animation-delay: 2s; /*waits 6 seconds before playing*/
+      animation-iteration-count: 1; /*total amount of times it is played(?)*/
+      animation-direction: normal; /*decides if it plays normally, reverse or alternates between itself: normal/reverse/alternate*/
+      animation-fill-mode: forwards; /*whether or not it adopts transformations or goes back to its original form.*/
+      animation-play-state: running; /*on/off*/
+        }
+    
+/*minor edits made to the same typing edit, the amount before the cursor stops typing */
+
+.typewriter2 {
+  overflow: hidden; /* Ensures the content is not revealed until the animation */
+  border-right: .15em solid darkblue; /* The typwriter cursor */
+  white-space: nowrap; /* Keeps the content on a single line */
+  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+  letter-spacing: .15em; /* Adjust as needed */
+  color:white;
+  animation: 
+    typing 3.5s steps(50, end),
+    blink-caret .75s step-end infinite;
+}
+
+/* The typing effect */
+ @keyframes typing {
+ from {width: 0; }
+ to {width: 32ch; }
+}
+
+ @keyframes blink-caret {
+  from, to {border-color: transparent; }
+  50% { border-color: black; }
+}
+
+
+
+/* styling for Page 4 */
+
+.body4 {
+  background-image: url(../img/movingsky.gif);
+  background-repeat: no-repeat;
+	background-position: center;
+	background-attachment: fixed;
+	background-size: cover;
+  align-items: center;
+  padding: 65px;
+}
+
+.words {
+  text-align: center;
+  padding: 150px;
+}
+
+/*coding for images used*/
+.grassyknoll {
+	display: block;
+	position: fixed;
+	width: 100vw;
+	height: 100vh;
+  left: 0;
+  top: 5px;
+}
+
+.tower1 {
+  display: block;
+  position: fixed;
+  rotate: 45deg;
+  width: 350px;
+  height: 800px;
+  top: -75px;
+}
+
+.tower2 {
+  display: block;
+  position: fixed;
+  rotate: -60deg;
+  width: 400px;
+  height: 800px;
+  margin-left: 70%;
+  top: -100px;
+  right: 50px;
+}
+
+.tower3 {
+  display: block;
+  position: fixed;
+  top: -95px;
+  width: 400px;
+  height: 800px;
+  margin-left: 35%;
+}
+
+/* Styling for Page 5 */
+
+.body5 {
+  background-image: url(../img/playhouse1.jpg);
+  background-repeat: no-repeat;
+	background-position: center;
+	background-attachment: fixed;
+	background-size: cover;
+  align-items: center;
+}
+
+.finger-paint-regular {
+  font-family: "Finger Paint", sans-serif;
+  font-weight: 400px;
+  font-style: normal;
+  text-align: bottom;
+  font-size: 50px;;
+}
+
+/* Styling for Page 6 */
+
+.body6 {
+  background-image: url(../img/Loop\ Road\ GIF.gif);
+  background-repeat: no-repeat;
+	background-position: center;
+	background-attachment: fixed;
+	background-size: cover;
+  align-items: center;
+}
+
+.car-inside {
+  display: block;
+  position: fixed;
+	width: 150vw;
+	height: 130vh;
+  right: -150px;
+  top: 25px;
+  rotate: -15deg;
+  object-fit: cover;
+}
+
+/* Styling for Page 7 */
+
+.body7 {
+  background-image: url(../img/StarryGif.gif);
+  background-repeat: no-repeat;
+	background-position: center;
+	background-attachment: fixed;
+	background-size: cover;
+  align-items: center;
+}
+.frame { /* the "." selects specific CLASS attributes; in this instance selects specific div.*/
+  width: 100%; /*utilizing the FLEXBOX, instead of using margins, we use width since "justify-content" centered it, we are creating a frame in the exact middle." */
+  height: 600px; /*defining the height of the frame*/
+  position: relative; /*Acts as an anchor to its children, when it moves, they move.*/
+  overflow: hidden;
+      }
+
+.words h1 {
+  font-size: 20px;
+  font-family: monospace;
+  color: white;
+  width: 50ch; /*ch is a relative unit equal to the width of the "0" character of the font. We are using 26 because the header has 26 characters.*/
+  overflow: hidden;
+  white-space: nowrap; /*this property functions similarly to overflow. When the text reaches the boundaries of its container, the no wrap will make it not wrap vertically underneath it.*/
+  border-right: solid; /* border-right is a property that selects the right of the border of the header, and create a solid line. This targets the visual look of it. Other attributes can be dotted, or dashed.*/
+  border-right-width: 1.5px; /*defines the weight of the solid border*/
+  border-right-color: white; /*defines the color*/
+
+  margin: 0 auto;
+  letter-spacing: .15em;
+        
+  animation:
+    typing 8s steps(70, end),
+    blink-caret .5s step-end infinite;
+      }
+
+.words h2{
+  font-size: 20px;
+  font-family: monospace;
+  color: white;
+  width: 55ch; /*ch is a relative unit equal to the width of the "0" character of the font. We are using 26 because the header has 26 characters.*/
+  overflow: hidden;
+  white-space: nowrap; /*this property functions similarly to overflow. When the text reaches the boundaries of its container, the no wrap will make it not wrap vertically underneath it.*/
+  border-right: solid; /* border-right is a property that selects the right of the border of the header, and create a solid line. This targets the visual look of it. Other attributes can be dotted, or dashed.*/
+  border-right-width: 1.5px; /*defines the weight of the solid border*/
+  border-right-color: white; /*defines the color*/
+
+  margin: 0 auto;
+  letter-spacing: .15em;
+        
+  animation:
+    typing 8s steps(70, end),
+    blink-caret .5s step-end infinite;
+}
+
+  @keyframes typing {
+   from {width: 0; }
+   to {width: 50ch; }
+      }
+  @keyframes blink-caret {
+   from, to {border-color: transparent; }
+   50% { border-color: black; }
+
+}
+
+        /* Page 7 Images */
+.milk-jug{ /* this is for Milk*/
+  height: 250px;
+  width: 200px;
+  position: absolute;
+  rotate: 55deg;
+}
+
+.underwear {
+  bottom: 50px;
+  left: 100px;
+  height: 300px;
+  width: 200px;
+  position: absolute;
+  rotate: -35deg;
+}
+
+.iron-poster {
+  position: absolute;
+  height: 300px;
+  width: 200px;
+  bottom: 200px;
+  right: 200px;
+  rotate: 15deg
+}
+
