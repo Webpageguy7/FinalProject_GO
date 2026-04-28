@@ -167,8 +167,10 @@
 }
 
 .words {
-  text-align: center;
-  padding: 150px;
+  padding: 20px;
+  text-decoration-style: wavy;
+  position: absolute;
+  right: 300px;
 }
 
 /*coding for images used*/
@@ -179,6 +181,7 @@
 	height: 100vh;
   left: 0;
   top: 5px;
+  z-index: 1;
 }
 
 .tower1 {
@@ -186,34 +189,38 @@
   position: fixed;
   rotate: 45deg;
   width: 350px;
-  height: 800px;
-  top: -75px;
+  height: 500px;
+  top: -55px;
+  left: -70px;
+  z-index: 2;
 }
 
 .tower2 {
   display: block;
   position: fixed;
-  rotate: -60deg;
+  rotate: -20deg;
   width: 400px;
-  height: 800px;
-  margin-left: 70%;
-  top: -100px;
-  right: 50px;
+  height: 450px;
+  margin-right: 50%;
+  top: -10px;
+  right: 100px;
+  z-index: 2;
 }
 
 .tower3 {
   display: block;
   position: fixed;
-  top: -95px;
+  top: -40px;
   width: 400px;
-  height: 800px;
-  margin-left: 35%;
+  height: 500px;
+  margin-left: 30%;
+  z-index: 2;
 }
 
 /* Styling for Page 5 */
 
 .body5 {
-  background-image: url(../img/playhouse1.jpg);
+  background-image: url(../img/playroom.jpg);
   background-repeat: no-repeat;
 	background-position: center;
 	background-attachment: fixed;
@@ -225,8 +232,20 @@
   font-family: "Finger Paint", sans-serif;
   font-weight: 400px;
   font-style: normal;
-  text-align: bottom;
-  font-size: 50px;;
+  position: absolute;
+  font-size: 30px;
+  bottom: 0px;
+  left: 400px;
+  color:darkblue;
+  background-color: darkslategrey;
+}
+
+.clownplush {
+  height: 300px;
+  width: 300px;
+  position: absolute;
+  left: 70%;
+  bottom: 20%
 }
 
 /* Styling for Page 6 */
@@ -240,6 +259,40 @@
   align-items: center;
 }
 
+.computer-words{
+  font-family: monospace;
+  font-size: 20px;
+  color: white;
+  position: absolute;
+  bottom: 310px;
+  right: 1010px;
+  rotate: -12deg;
+  z-index: 2;
+}
+
+.computer-words2 {
+  font-family: monospace;
+  font-size: 20px;
+  color: white;
+  position: absolute;
+  bottom: 150px;
+  right: 1000px;
+  rotate: -12deg;
+  z-index: 2;
+}
+
+.computer-words3 {
+  font-family: monospace;
+  font-size: 20px;
+  color: white;
+  position: absolute;
+  bottom: 170px;
+  right: 1009px;
+  rotate: -12deg;
+  z-index: 2;
+}
+
+
 .car-inside {
   display: block;
   position: fixed;
@@ -250,6 +303,16 @@
   rotate: -15deg;
   object-fit: cover;
 }
+
+.computer {
+  display: block;
+  position: fixed;
+  rotate: -13deg;
+  right: 820px;
+  bottom: -40px;
+  width: 40%;
+}
+
 
 /* Styling for Page 7 */
 
@@ -337,8 +400,174 @@
   position: absolute;
   height: 300px;
   width: 200px;
-  bottom: 200px;
+  bottom: 375px;
   right: 200px;
   rotate: 15deg
 }
 
+.DoggiePic {
+  position: absolute;
+  height: 300px;
+  width: 300px;
+  bottom: 70px;
+  right: 200px;
+  rotate: -52deg
+}
+
+
+/* Styling for Page8 */
+.body8 {
+  background-image: url(../img/firebuilding.gif);
+  background-repeat: no-repeat;
+	background-position: center;
+	background-attachment: fixed;
+	background-size: cover;
+  align-items: center;
+}
+
+.runningpeople {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  align-items: center;
+}
+
+
+/* Styling for Page 9 */
+
+.body9 {
+  background-image: url(../img/sunset.gif);
+  background-repeat: no-repeat;
+	background-position: center;
+	background-attachment: fixed;
+	background-size: cover;
+  align-items: center;
+}
+
+
+/* Styling for Page 10 */
+
+.body10 {
+  background-image: url(../img/rainbowslide.gif);
+  background-repeat: no-repeat;
+	background-position: center;
+	background-attachment: fixed;
+	background-size: cover;
+  align-items: center;
+}
+
+.words h1 {
+  font-size: 20px;
+  font-family: monospace;
+  color: white;
+  width: 50ch; /*ch is a relative unit equal to the width of the "0" character of the font. We are using 26 because the header has 26 characters.*/
+  overflow: hidden;
+  white-space: nowrap; /*this property functions similarly to overflow. When the text reaches the boundaries of its container, the no wrap will make it not wrap vertically underneath it.*/
+  border-right: solid; /* border-right is a property that selects the right of the border of the header, and create a solid line. This targets the visual look of it. Other attributes can be dotted, or dashed.*/
+  border-right-width: 1.5px; /*defines the weight of the solid border*/
+  border-right-color: white; /*defines the color*/
+
+  margin: 0 auto;
+  letter-spacing: .15em;
+        
+  animation:
+    typing 8s steps(70, end),
+    blink-caret .5s step-end infinite;
+      }
+
+@keyframes typing {
+  from {width: 0; }
+  to {width: 50ch; }
+      }
+@keyframes blink-caret {
+  from, to {border-color: transparent; }
+  50% { border-color: white; }
+
+}
+
+.indie-flower-regular {
+  font-family: "Indie Flower", cursive;
+  font-style: normal;
+  position: absolute;
+  font-size: 50px;
+}
+
+.blue-words {
+  color: blue;
+  left: 120px;
+  top: 170px;
+  font-family: "Indie Flower", cursive;
+  font-style: normal;
+  position: absolute;
+  font-size: 50px;
+}
+
+.pink-words {
+  color: pink;
+  left: 90px;
+  bottom: 50px;
+  font-family: "Indie Flower", cursive;
+  font-style: normal;
+  position: absolute;
+  font-size: 50px;
+}
+
+.purple-words {
+   font-family: "Indie Flower", cursive;
+  font-style: normal;
+  position: absolute;
+  font-size: 50px;
+  color: purple;
+  left: 400px;
+  top: 20px;
+}
+
+.orange-words {
+  color: orange;
+  left: 350px;
+  top: 250px;
+   font-family: "Indie Flower", cursive;
+  font-style: normal;
+  position: absolute;
+  font-size: 50px;
+}
+
+.green-words {
+  color: green;
+  left: 650px;
+  top: 400px;
+  font-family: "Indie Flower", cursive;
+  font-style: normal;
+  position: absolute;
+  font-size: 50px;
+}
+
+.red-words {
+  color: red;
+  right: 430px;
+  top: 500px;
+   font-family: "Indie Flower", cursive;
+  font-style: normal;
+  position: absolute;
+  font-size: 50px;
+}
+
+.yellow-words {
+  color: yellow;
+  right: 320px;
+  top: 350px;
+   font-family: "Indie Flower", cursive;
+  font-style: normal;
+  position: absolute;
+  font-size: 50px;
+}
+
+.silver-words {
+  color: silver;
+  right: 500px;
+  bottom: 350px;
+   font-family: "Indie Flower", cursive;
+  font-style: normal;
+  position: absolute;
+  font-size: 50px;
+}
