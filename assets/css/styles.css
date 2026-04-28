@@ -680,11 +680,20 @@ z-index: -1;
 /* Styling for body12*/
 
 .body12 {
-  background-image: url(../img/fieldbackground.jpg);
+  background-image: url(../img/colorsky.gif);
   background-repeat: no-repeat;
 	background-position: center;
 	background-attachment: fixed;
 	background-size: cover;
   align-items: center;
 }
+
+.fieldtop {
+  size: cover;
+  position: absolute;
+  bottom: -300px;
+  left: 0px;
+}
+
+
 
