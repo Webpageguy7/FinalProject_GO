@@ -604,3 +604,87 @@ z-index: -1;
   position: absolute;
   font-size: 50px;
 }
+
+/* Styling for body11 */
+
+.body11 {
+  background-image: url(../img/movingcorridor.gif);
+  background-repeat: no-repeat;
+	background-position: center;
+	background-attachment: fixed;
+	background-size: cover;
+  align-items: center;
+}
+
+.text2 {
+  position: absolute; 
+  align-items: center;
+  text-align: center; /* Places the text at the center of the screen*/
+  top: 50%;
+  left: 50%;
+  color: white;
+
+   /*longhand*/
+  animation-name: text-translate; 
+  animation-duration: 20s; /*total duration of the timing-function (steps)*/
+  animation-timing-function: steps(20); /*breaks animation into 20 steps*/
+  animation-delay: 2s; /*waits 2 seconds before playing*/
+  animation-iteration-count: 1; /*total amount of times it is played(?)*/
+  animation-direction: normal; /*decides if it plays normally, reverse or alternates between itself: normal/reverse/alternate*/
+  animation-fill-mode: forwards; /*whether or not it adopts transformations or goes back to its original form.*/
+  animation-play-state: running; /*on/off*/
+ }
+
+ /* The typing effect */
+ @keyframes typing {
+ from {width: 0; }
+ to {width: 32ch; }
+}
+
+ @keyframes blink-caret {
+  from, to {border-color: transparent; }
+  50% { border-color: black; }
+ }
+
+ .fade-loop {
+  /* Animation name, duration, timing, and iteration count */
+  animation: fadeInOut 7s ease-in-out infinite;
+}
+
+@keyframes fadeInOut {
+  0% { opacity: 0; }    /* Start invisible */
+  50% { opacity: 1; }   /* Fully visible at the midpoint */
+  100% { opacity: 0; }  /* End invisible */
+}
+
+.left-text {
+  align-items: left;
+  position: absolute;
+  text-align: center;
+  top: 50%;
+  left: 100px;
+  color: white;
+  font-size: 55px;
+}
+
+.right-text {
+  align-items: right;
+  position: absolute;
+  text-align: center;
+  top: 50%;
+  right: 100px;
+  color: white;
+  font-size: 55px;
+}
+
+/* Styling for body12*/
+
+.body12 {
+  background-image: url(../img/fieldbackground.jpg);
+  background-repeat: no-repeat;
+	background-position: center;
+	background-attachment: fixed;
+	background-size: cover;
+  align-items: center;
+}
+
