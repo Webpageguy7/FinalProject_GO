@@ -10,10 +10,12 @@
 }
 
 .notepad {
-left: 50%;
-bottom: 50%;
-height: 50%;
-width: 50%;
+top: 50px;
+height: 700px;
+width: 700px;
+position: absolute;
+right: 430px;
+z-index: -1;
 }
 
 .typewriter1 {
@@ -22,19 +24,19 @@ width: 50%;
   white-space: nowrap; /* Keeps the content on a single line */
   margin: 0 auto; /* Gives that scrolling effect as the typing happens */
   letter-spacing: .15em; /* Adjust as needed */
-  color:white;
+  color:black;
   text-align: center;
   padding: 200px;
 
   animation: 
-    typing 6s steps(75, end),
+    typing 6s steps(65, end),
     blink-caret .75s step-end infinite;
 }
 
 /* The typing effect */
  @keyframes typing {
  from {width: 0; }
- to {width: 20ch; }
+ to {width: 15ch; }
 }
 
  @keyframes blink-caret {
@@ -60,15 +62,39 @@ width: 50%;
 }
 
 .winterwords {
-  text-align: center;
-  top: 50%;
-  background-color: lightskyblue;
-  width: 300px;
-  height: 50px;
-  left: 40%;
   position: absolute;
+  text-align: center;
+  left: 610px;
+  bottom: 300px;
+  z-index: 2;
 }
 
+.thesign {
+  position: absolute;
+  top: 145px;
+  right: 470px;
+  height: 520px;
+  width: 580px;
+  align-items: center;
+}
+
+.color-box {
+  width: 330px;           /* Sets box width */
+  height: 150px;          /* Sets box height */
+  background-color: lightblue; /* Fills with color */
+  position: absolute;
+  left: 600px;
+  bottom: 300px;
+
+}
+
+.snowyhill {
+  size: cover;
+  position: absolute;
+  align-items: center;
+  bottom: -300px;
+  z-index: 1;
+}
 
 /* Styling for Page 3 */
 
