@@ -1,12 +1,19 @@
 /* styles.css */
 /* index styling */
 .body1 {
-  background-image: url(../img/computerthing.png);
+  background-image: url(../img/childroom.png);
   background-repeat: no-repeat;
 	background-position: center;
 	background-attachment: fixed;
 	background-size: cover;
   align-items: center;
+}
+
+.notepad {
+left: 50%;
+bottom: 50%;
+height: 50%;
+width: 50%;
 }
 
 .typewriter1 {
