@@ -7,7 +7,6 @@
 	background-attachment: fixed;
 	background-size: cover;
   align-items: center;
-	text-color: black;
 }
 
 .notepad {
@@ -19,6 +18,11 @@ right: 430px;
 z-index: -1;
 }
 
+outline {
+outline-style: solid;
+outline-color: black; /* Set the outline color to white */
+}
+
 .typewriter1 {
   overflow: hidden; /* Ensures the content is not revealed until the animation */
   border-right: .15em solid darkblue; /* The typwriter cursor */
@@ -26,7 +30,6 @@ z-index: -1;
   margin: 0 auto; /* Gives that scrolling effect as the typing happens */
   letter-spacing: .15em; /* Adjust as needed */
   color: black;
-  text-color: black;
   text-align: center;
   padding: 200px;
 
@@ -67,14 +70,14 @@ z-index: -1;
   position: absolute;
   text-align: center;
   left: 610px;
-  bottom: 400px;
+  bottom: 275px;
   z-index: 2;
 }
 
 .thesign {
   position: absolute;
-  top: 105px;
-  right: 470px;
+  top: 100px;
+  right: 480px;
   height: 520px;
   width: 580px;
   align-items: center;
