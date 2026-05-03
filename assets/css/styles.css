@@ -9,6 +9,15 @@
   align-items: center;
 }
 
+.color-box2 {
+  width: 330px;           /* Sets box width */
+  height: 150px;          /* Sets box height */
+  background-color: lightblue; /* Fills with color */
+  position: absolute;
+  left: 600px;
+  bottom: 300px;
+  z-index: -1;
+}
 .notepad {
 top: 50px;
 height: 700px;
@@ -70,7 +79,7 @@ outline-color: black; /* Set the outline color to white */
   position: absolute;
   text-align: center;
   left: 610px;
-  bottom: 275px;
+  bottom: 285px;
   z-index: 2;
 }
 
@@ -88,8 +97,8 @@ outline-color: black; /* Set the outline color to white */
   height: 150px;          /* Sets box height */
   background-color: lightblue; /* Fills with color */
   position: absolute;
-  left: 600px;
-  bottom: 300px;
+  left: 650px;
+  bottom: 330px;
 
 }
 
