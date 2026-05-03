@@ -15,9 +15,14 @@
   background-color: lightblue; /* Fills with color */
   position: absolute;
   left: 600px;
-  bottom: 300px;
+  bottom: 420px;
   z-index: 1;
 }
+
+.notewords {
+  text-color: black;
+}
+
 .notepad {
 top: 50px;
 height: 700px;
@@ -38,10 +43,8 @@ outline-color: black; /* Set the outline color to white */
   white-space: nowrap; /* Keeps the content on a single line */
   margin: 0 auto; /* Gives that scrolling effect as the typing happens */
   letter-spacing: .15em; /* Adjust as needed */
-  color: black;
   text-align: center;
   padding: 200px;
-  z-index: 2
 
   animation: 
     typing 6s steps(65, end),
@@ -98,8 +101,8 @@ outline-color: black; /* Set the outline color to white */
   height: 150px;          /* Sets box height */
   background-color: lightblue; /* Fills with color */
   position: absolute;
-  left: 650px;
-  bottom: 330px;
+  left: 600px;
+  bottom: 300px;
 
 }
 
