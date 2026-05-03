@@ -11,12 +11,12 @@
 
 .color-box2 {
   width: 330px;           /* Sets box width */
-  height: 150px;          /* Sets box height */
+  height: 350px;          /* Sets box height */
   background-color: lightblue; /* Fills with color */
   position: absolute;
   left: 600px;
   bottom: 300px;
-  z-index: -1;
+  z-index: 1;
 }
 .notepad {
 top: 50px;
@@ -41,6 +41,7 @@ outline-color: black; /* Set the outline color to white */
   color: black;
   text-align: center;
   padding: 200px;
+  z-index: 2
 
   animation: 
     typing 6s steps(65, end),
@@ -72,14 +73,14 @@ outline-color: black; /* Set the outline color to white */
 .winterheader {
   align-items: center;
   text-align: center;
-  padding: 100px;
+  padding: 150px;
 }
 
 .winterwords {
   position: absolute;
   text-align: center;
-  left: 610px;
-  bottom: 285px;
+  left: 650px;
+  bottom: 275px;
   z-index: 2;
 }
 
