@@ -45,6 +45,7 @@ outline-color: black; /* Set the outline color to white */
   letter-spacing: .15em; /* Adjust as needed */
   text-align: center;
   padding: 200px;
+  background-color: lightblue;
 
   animation: 
     typing 6s steps(65, end),
@@ -82,8 +83,8 @@ outline-color: black; /* Set the outline color to white */
 .winterwords {
   position: absolute;
   text-align: center;
-  left: 650px;
-  bottom: 275px;
+  left: 630px;
+  bottom: 265px;
   z-index: 2;
 }
 
