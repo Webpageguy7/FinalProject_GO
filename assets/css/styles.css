@@ -9,15 +9,6 @@
   align-items: center;
 }
 
-.color-box2 {
-  width: 330px;           /* Sets box width */
-  height: 350px;          /* Sets box height */
-  background-color: lightblue; /* Fills with color */
-  position: absolute;
-  left: 600px;
-  bottom: 420px;
-  z-index: 1;
-}
 
 .notewords {
   text-color: black;
@@ -45,8 +36,7 @@ outline-color: black; /* Set the outline color to white */
   letter-spacing: .15em; /* Adjust as needed */
   text-align: center;
   padding: 200px;
-  background-color: lightblue;
-
+	
   animation: 
     typing 6s steps(65, end),
     blink-caret .75s step-end infinite;
