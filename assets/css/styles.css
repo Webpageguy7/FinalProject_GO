@@ -73,7 +73,8 @@ outline-color: black; /* Set the outline color to white */
 .winterwords {
   position: absolute;
   text-align: center;
-  padding: 235px;
+  top: 15%;
+  left: 35%;
   z-index: 2;
 }
 
