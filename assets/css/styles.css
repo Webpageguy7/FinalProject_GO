@@ -73,15 +73,14 @@ outline-color: black; /* Set the outline color to white */
 .winterwords {
   position: absolute;
   text-align: center;
-  left: 35%;
-  top: 35%;
+  padding: 235px;
   z-index: 2;
 }
 
 .thesign {
   position: absolute;
-  top: 20%;
-  left: 30%;
+  top: 15%;
+  left: 35%;
   height: 520px;
   width: 580px;
   align-items: center;
@@ -93,7 +92,7 @@ outline-color: black; /* Set the outline color to white */
   background-color: lightblue; /* Fills with color */
   position: absolute;
   top: 35%;
-  left: 50%;
+  left: 43%;
 
 }
 
