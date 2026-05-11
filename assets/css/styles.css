@@ -498,7 +498,7 @@ outline-color: black; /* Set the outline color to white */
 
 .fireborder {
   position: absolute;
-  top: 300px;
+  top: 60%;
   width: 1500px;
   opacity: 75%;
 }
