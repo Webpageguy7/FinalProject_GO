@@ -505,9 +505,9 @@ outline-color: black; /* Set the outline color to white */
 
 .elmoonfire {
   position: absolute;
-  bottom: 0px;
+  top: 60%;
   height: 800px;
-  left: 400px;
+  left: 450px;
 }
 
 .runningpeople {
