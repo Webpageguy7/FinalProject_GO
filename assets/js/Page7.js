@@ -1,6 +1,6 @@
 let rotation = 0;
 setInterval(function () {
-  rotation += 5;
+  rotation += 3;
   document.body.style.transform = `rotate(${rotation}deg)`;
 }, 100);
   const img = document.getElementById('Puppy', 'Milk', 'Poster', 'Underpants');
