@@ -403,10 +403,12 @@ outline-color: black; /* Set the outline color to white */
 
   margin: 0 auto;
   letter-spacing: .15em;
+  z-index: 1;
         
   animation:
     typing 8s steps(70, end),
     blink-caret .5s step-end infinite;
+	
       }
 
 .words h2{
@@ -422,6 +424,7 @@ outline-color: black; /* Set the outline color to white */
 
   margin: 0 auto;
   letter-spacing: .15em;
+  z-index: 1;
         
   animation:
     typing 8s steps(70, end),
