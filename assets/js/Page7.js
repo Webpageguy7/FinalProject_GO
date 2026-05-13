@@ -7,4 +7,5 @@ setInterval(function () {
 
  window.changeText = function() {
         console.log("Text change blocked.");
+        const img = document.getElementById('h1', 'h2');  
     };
